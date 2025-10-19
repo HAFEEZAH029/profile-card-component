@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( to bottom, #1cb5e0, #000046 );
+}
+
+#profile_card{
+    width: 85%;
+    background: #87ceeb;
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.profile_header{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.profile_header figure img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #000046;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.bio_name{
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #000046;
+}
+
+.bio_job{
+    font-size: 1.2rem;
+}
+
+.short_bio{
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.header_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#work_hire{
+    width: 55%;
+    padding: 1rem;
+}
+
+#work_hire h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #000046;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+#work_hire .craft_info{
+    font-size: 1rem;
+    color: #000046;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.social_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 1rem ;
+}
+
+.social_links li a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.social_links li a:focus img, .social_links li a:focus-visible img{
+    border-radius: 4px;
+    padding: 0.1rem;
+    outline: 3px solid Highlight;
+    outline-offset: 5px;
+}
+
+.social_links li a img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#hobbies-dislikes{
+    width: 35%;
+}
+
+.hobbies h2, .dislikes h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000046;
+    text-align: center;
+    border-bottom: 2px solid #000046;
+}
+
+.hobbies_list, .dislikes_list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    #profile_card{
+        width: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    .profile_header figure img{
+        width: 210px;
+        height: 210px;
+    }
+    .bio_name{
+        font-size: 2rem;
+    }
+    .short_bio{
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+        text-align: justify;
+    }
+    #work_hire{
+        padding: 1rem 0;
+    }
+    #work_hire .craft_info{
+        text-align: justify;
+    }
+    .social_links li a img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width:800px) {
+    .header_info{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #work_hire{
+        width: 100%;
+    }
+    #work_hire .craft_info{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    #hobbies-dislikes{
+        width: 100%;
+    }
+    .hobbies h2, .dislikes h2{
+        border: none;
+        position: relative;
+    }
+    .hobbies h2::before, .dislikes h2::before{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 90px;
+        height: 3px;
+        background: #000046;
+        top:30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:750px) {
+    .profile_header{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .profile_header figure img{
+        width: 250px;
+        height: 250px;
+    }
+    .bio{
+        align-items: center;
+        text-align: center;
+    }
+    .bio_name{
+        font-size: 2.5rem;
+    }
+    .short_bio{
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+    }
+    .header_info{
+        border-top: 3px solid #000046;
+    }
+    .social_links{
+        display: flex;
+        justify-content:space-evenly;
+    }
+    .social_links li a img{
+        width: 40px;
+        height: 40px;
+    }
+    #hobbies-dislikes{
+        display: flex;
+        justify-content: space-around;
+    }
+    .hobbies_list, .dislikes_list{
+        margin: 1.5rem auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .hobbies_list li, .dislikes_list li{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    body{
+        padding: 0;
+    }
+    #profile_card{
+        padding: 1rem 1.5rem;
+        border-radius: 0px;
+        background-color: rgba(135, 206, 235, 0.5);
+    }
+    .profile_header figure img{
+        width: 200px;
+        height: 200px;
+    }
+    .bio_name{
+        font-size: 2rem;
+    }
+    .short_bio{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    #work_hire .craft_info{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+    #hobbies-dislikes{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .hobbies_list li, .dislikes_list li{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:380px) {
+    body{
+        padding:0;
+    }
+    #profile_card{
+        padding: 0rem;
+    }
+    .profile_header figure img{
+        width: 150px;
+        height: 150px;
+    }
+    .bio{
+        margin: auto 0.8rem;
+    }
+    .bio_name{
+        font-size: 1.5rem;
+    }
+    .short_bio{
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+    #work_hire .craft_info{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin: auto 0.5rem 1rem 0.5rem;
+    }
+    .social_links{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .social_links li a img{
+        width: 25px;
+        height: 25px;
+    }
+    .hobbies_list li, .dislikes_list li{
+        font-size: 1rem;
+    }
+}
