@@ -9,7 +9,7 @@ A tiny, responsive profile card component built with HTML, CSS, and vanilla Java
 4. README.md — this file with run, deploy, and testing instructions.
 
        DEMO
-The demo app would be available at: https://hafeezah029>.github.io/profile-card-component/ 
+The demo app would be available at: https://hafeezah029.github.io/profile-card-component/ 
 
       FEATURES
 1. Responsive layout (mobile-first)
