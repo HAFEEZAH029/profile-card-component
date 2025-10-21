@@ -1,3 +1,16 @@
+:root{
+  --bg-start: rgba(135, 206, 235, 0.5); /* requested */
+  --bg-end: rgba(255, 255, 255, 0.96);
+  --accent: #0b4fd6;     /* polished blue accent */
+  --muted: #6b7280;      /* muted gray text */
+  --text: #0f1724;       /* main text color */
+  --card-border: #e6eef9;
+  --radius: 12px;
+  --max-width: 1000px;
+  --gap: 28px;
+  --profile-width: 280px; /* width of vertical-rect image column */
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +24,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     background: linear-gradient( to bottom, #1cb5e0, #000046 );
 }
 
@@ -60,6 +75,38 @@ body{
 .short_bio{
     font-size: 1.25rem;
     line-height: 2rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000046;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #1cb5e0;
+    color: #000;
+}
+
+.btn:hover a {
+    color: #000;
 }
 
 .header_info{
