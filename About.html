@@ -9,36 +9,23 @@
 <body>
     <main id="about_me_page" data-testid="test-about-page" aria-label="about-page">
       <h2>About me  <span><a href="/index.html" aria-label="link-to-main-page">back to main</a></span> </h2>
-      <section id="intro">
-        <div id="key_information">
-            <section id="about_bio" data-testid="test-about-bio"><p></p></section>
-            <section id="Goals" data-testid="test-about-goals">
-                <h3>Goals for the program</h3>
-                <ol class="my_list">
-                    <li>To enhance my programming skills and gain a deeper understanding of advanced concepts.</li>
-                    <li>To build a strong portfolio of projects that demonstrate my abilities as a frontend engineer.</li>
-                    <li>To network with other professionals in the field and learn from their experiences.</li>
-                    <li>To stay updated with the latest trends and best practices in frontend engineering.</li>
-                    <li>To improve my problem-solving skills and ability to write clean, efficient code.</li>
-                </ol>
-            </section>
-            <section data-testid="test-about-confidence">
-                <h3>Area of low confidence</h3>
-                <ol class="my_list">
-                    <li>Asynchronous JavaScript and handling API calls effectively.</li>
-                    <li>State management in complex applications.</li>
-                    <li>Optimizing web performance for faster load times.</li>
-                    <li>Implementing advanced CSS techniques for responsive design.</li>
-                    <li>Testing and debugging large-scale applications.</li>
-                </ol>
+      <div id="notes_image">
+        <div id="key_notes">
+          <section id="about_bio" data-testid="test-about-bio">
+                <p>
+                    I am Annie Benjamin,a  frontend engineer from italy. I am in my mid
+                    twenties and have a passion for web development and design. I love creating
+                    beautiful and functional user interfaces that provide an excellent user experience.
+                    In my free time, I enjoy hiking, photography, and exploring new places.
+                </p>
             </section>
             <section id="note_to_self" data-testid="test-about-future-note" aria-label="A-note-to-my-future-self">
                 <h3>Note to future self</h3>
                 <p class="note">
-                    Remember to stay curious and keep learning. The field of frontend engineering is constantly
+                    " Remember to stay curious and keep learning. The field of frontend engineering is constantly
                     evolving, and staying updated with the latest technologies and best practices is crucial. Don't
                     be afraid to take on challenging projects—they are the best opportunities for growth.Keep pushing
-                    your limits and striving for excellence!
+                    your limits and striving for excellence!.
                 </p>
             </section>
             <section id="extra_thoughts" data-testid="test-about-extra" aria-label="extra-thoughts-on-the-journey">
@@ -47,16 +34,33 @@
                     Embarking on this journey as a frontend engineer is both exciting and challenging. It's a field
                     that demands creativity, technical skills, and a keen eye for detail. As I navigate through this
                     program, I am reminded of the importance of perseverance and adaptability. The tech landscape is
-                    ever-changing, and being open to learning new tools and frameworks is essential. I am eager to
-                    collaborate with peers, share knowledge, and contribute to meaningful projects. This experience
-                    is not just about acquiring skills; it's about shaping my mindset to think critically and solve
-                    problems effectively. I look forward to the growth and opportunities that lie ahead in this
-                    dynamic field.
+                    ever-changing, and being open to learning new tools and frameworks is essential.
                 </p>
             </section>
         </div>
-        <div id="profile"><img src="./Images/profile.jpg" alt="A woman image"></div>
-    </section>
+        <figure id="profile"><img src="./Images/profile.jpg" alt="A woman image"></figure>
+      </div>
+
+        <div id="key_information">
+            <section id="Goals" data-testid="test-about-goals">
+                <h3>Goals for the program</h3>
+                <ul class="my_list">
+                    <li>To enhance my programming skills and gain a deeper understanding of advanced concepts.</li>
+                    <li>To build a strong portfolio of projects that demonstrate my abilities as a frontend engineer.</li>
+                    <li>To network with other professionals in the field and learn from their experiences.</li>
+                    <li>To improve my problem-solving skills and ability to write clean, efficient code.</li>
+                </ul>
+            </section>
+            <section id="a-l-c" data-testid="test-about-confidence">
+                <h3>Area of low confidence</h3>
+                <ul class="my_list">
+                    <li>Asynchronous JavaScript and handling API calls effectively.</li>
+                    <li>State management in complex applications.</li>
+                    <li>Optimizing web performance for faster load times.</li>
+                    <li>Testing and debugging large-scale applications.</li>
+                </ul>
+            </section>
+        </div>
     </main>
 </body>
 </html>

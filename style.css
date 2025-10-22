@@ -24,9 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient( to bottom, #1cb5e0, #000046 );
+    background: linear-gradient( to right, #1cb5e0, #008080 );
 }
 
 #profile_card{
@@ -90,6 +88,7 @@ body{
     color: #fff;
     background-color: #000046;
     border: none;
+    outline: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.5s ease-out;
@@ -103,6 +102,10 @@ body{
 .btn:hover{
     background-color: #1cb5e0;
     color: #000;
+}
+
+.btn a:focus, .btn a:focus-visible{
+    color: #1cb5e0;
 }
 
 .btn:hover a {
@@ -183,6 +186,303 @@ body{
     gap: 1rem;
     margin: 1rem auto;
 }
+
+
+
+/* About page styling */
+main#about_me_page {
+  max-width: 90%;
+  margin: 3rem auto;
+  padding: 34px;
+}
+
+/* Page heading */
+main#about_me_page > h2 {
+  margin: 0 0 1.125rem 5rem;
+  font-size: 3.5rem;
+  letter-spacing: -0.2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000046;
+}
+
+/* small link on heading */
+main#about_me_page > h2 span a {
+  font-size: 1.5rem;
+  color: #000046;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(11,79,214,0.12);
+  padding-bottom: 2px;
+  transition: all 0.5s ease-out;
+}
+main#about_me_page > h2 span a:focus,
+main#about_me_page > h2 span a:hover {
+  color: #1cb5e0;
+  border-bottom: 2px solid rgb(0, 0, 139);
+  outline: none;
+}
+
+/* Intro section layout: two columns horizontally
+   - key_information (flex: 1) + profile (fixed width)
+   - align-items: stretch so profile height follows key_information
+*/
+#notes_image {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%  ;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#key_notes{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 58%;
+    height: 100%;
+}
+
+#profile {
+  width: 34%;
+  overflow: hidden;
+  border: 3px solid #000046;
+  border-radius: 20px;
+}
+
+
+#profile img {
+  width: 100%;
+  height: 100%;
+}
+
+
+#key_information {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Each subsection spacing */
+#key_information > section {
+  margin-bottom: 18px;
+}
+
+#key_information > section:last-child {
+    margin-bottom: 0;
+}
+
+/* About bio area */
+#about_bio p {
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+  color: #000046;
+  line-height: 1.7rem;
+  letter-spacing: 0.05rem;
+  text-align: justify;
+}
+
+/* Sub-headings for sections */
+#Goals, #a-l-c {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem   ;
+    height: 100%;
+}
+
+#Goals h3, #a-l-c h3 {
+  background-color: #000046;
+  width: fit-content;
+  margin: 0 0 0.8rem 0;
+  padding: 0.5rem;
+  font-size: 1.05rem;
+  color: #1cb5e0;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+#Goals h3{
+    border-top-right-radius: 0.8rem;
+}
+
+#a-l-c h3{
+    border-bottom-left-radius: 0.8rem;
+}
+
+
+.my_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.my_list li {
+  margin: 0 0 0.8rem 0;
+  padding: 0;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+
+#extra_thoughts h3, #note_to_self h3 {
+    color: #000046;
+    margin-bottom: 0.4rem;
+    padding: 0.1rem 0;
+    width: fit-content;
+}
+
+
+.note {
+  margin: 0;
+  font-style: normal;
+  color: #000046;
+  line-height: 1.5rem;
+  letter-spacing: 0.05rem;
+  text-align: justify;
+  background: linear-gradient(180deg, rgba(0,128,128,0.4), transparent);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(11,79,214,0.04);
+}
+
+
+/* Small accessibility and focus helpers */
+a:focus {
+  outline: 3px solid rgba(11,79,214,0.18);
+  outline-offset: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -401,3 +701,186 @@ body{
         font-size: 1rem;
     }
 }
+
+
+
+/** About page responsive styling */
+
+@media (max-width: 1024px) {
+  main#about_me_page {
+    padding: 28px;
+    margin: 2.25rem auto;
+    max-width: 92%;
+  }
+
+  #notes_image {
+    gap: 1.25rem;
+  }
+
+  /* Make key_notes a bit wider and profile a touch smaller */
+  #key_notes { width: 62%; }
+  #profile { width: 36%; }
+
+  /* keep headings readable */
+  main#about_me_page > h2 {
+    font-size: 2.6rem;
+    margin: 0 0 1rem 3.5rem;
+  }
+}
+
+@media(max-width:890px) {
+  #notes_image {
+    flex-direction: column-reverse; /* profile above key_notes */
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  /* full width columns within notes image area */
+  #key_notes,
+  #profile {
+    width: 100%;
+  }
+
+  /* Make profile a vertical-rect with a reasonable height */
+  #profile {
+    height: 340px;        /* fixed visual rectangle on tablets */
+    border-radius: 14px;
+  }
+  #profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  main#about_me_page {
+    padding: 22px;
+    margin: 1.75rem auto;
+  }
+
+
+  /* Adjust heading and spacing */
+  main#about_me_page > h2 {
+    font-size: 2.2rem;
+    margin: 0 0 0.9rem 1.25rem;
+  }
+
+
+   #key_information {
+    flex-direction: column;
+    align-items: stretch; /* keep stretching behavior for consistency */
+    gap: 0.9rem;
+  }
+
+  #Goals, #a-l-c {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0.9rem;
+    min-height: auto;
+  }
+
+
+  /* make lists comfortable to read on small devices */
+  .my_list {
+    padding-left: 1rem;
+    font-size: 0.98rem;
+    max-height: none;  /* let them grow naturally in the document flow */
+  }
+
+}
+
+/* ---------------------------
+   Large phones / small tablets (<= 600px)
+   Collapse Goals & Area-of-low-confidence to stacked rows
+   --------------------------- */
+@media (max-width: 600px) {
+  main#about_me_page {
+    padding: 18px;
+    margin: 1.25rem auto;
+  }
+
+  /* Ensure profile remains on top (column-reverse still applies) */
+  #notes_image {
+    gap: 0.75rem;
+  }
+
+  /* Reduce heading sizes for compact screens */
+  main#about_me_page > h2 {
+    font-size: 1.6rem;
+    margin: 0 0 0.6rem 0.5rem;
+  }
+
+  main#about_me_page > h2 span a{
+    font-size: 1rem;
+  }
+
+  /* Slightly reduce note paragraph text */
+  .note {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  /* profile visual size for phones */
+  #profile {
+    height: 300px;
+    border-radius: 12px;
+  }
+  #profile img {
+    height: 100%;
+  }
+}
+
+/* ---------------------------
+   Small phones (<= 420px)
+   Tighten padding and scale typography for very small screens
+   --------------------------- */
+@media (max-width: 420px) {
+  main#about_me_page {
+    padding: 14px;
+  }
+
+  main#about_me_page > h2 {
+    font-size: 1.35rem;
+    margin: 0 0 0.5rem 0.5rem;
+    line-height: 1.15;
+  }
+
+  /* slightly smaller profile height for very small devices */
+  #profile {
+    height: 240px;
+  }
+
+  /* increase tap targets and spacing a little for finger use */
+  #Goals h3, #a-l-c h3 {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.95rem;
+  }
+
+  #Goals, #a-l-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my_list li {
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* ---------------------------
+   Accessibility improvements for touch devices
+   --------------------------- */
+@media (hover: none) {
+  /* make interactive targets easier to tap on touch-only devices */
+  main#about_me_page > h2 span a {
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+}
+
