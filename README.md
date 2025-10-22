@@ -4,12 +4,14 @@ A tiny, responsive profile card component built with HTML, CSS, and vanilla Java
 
        What's Included;
 1. index.html — entry page containing the profile card markup.
+2. About.html- an about me page detailing important information about the engineer
+3. Contact.html- a page provided to allow users reach out to the engineer
 2. css/ — styles (e.g. styles.css).
-3. js/ — vanilla JS for interactivity (e.g. main.js
+3. js/ — vanilla JS for interactivity (e.g. main.js)
 4. README.md — this file with run, deploy, and testing instructions.
 
        DEMO
-The demo app would be available at: https://hafeezah029.github.io/profile-card-component/ 
+The demo app would be available at: https://hafeezah029.github.io/profile-card-component/
 
       FEATURES
 1. Responsive layout (mobile-first)
@@ -49,5 +51,3 @@ After downloading the repo to your local computer, use VS CODE and install the L
        Performance / static checks:
        No console errors on load.
        No unexpected layout shifts when assets load.
-
-     

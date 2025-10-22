@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="contact-page" class="contact-card" aria-labelledby="contact-heading">
+    <h1 id="contact-heading">Contact Us</h1>
+    <p class="lead">Have a question or want to collaborate? Send a message and I'll get back to you.</p>
+
+    <!-- Accessible form structure only (no styling or logic) -->
+    <form id="contact-form" novalidate aria-describedby="form-status">
+
+      <div class="form-grid" role="group" aria-label="contact-form-fields">
+
+        <!-- Full name -->
+        <div class="field">
+          <label for="contact-name">Full name <span aria-hidden="true">*</span></label>
+          <input id="contact-name" name="name" type="text" data-testid="test-contact-name" required aria-describedby="test-contact-error-name" />
+          <span id="test-contact-error-name" data-testid="test-contact-error-name" class="error" role="alert" aria-hidden="true"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="field">
+          <label for="contact-email">Email <span aria-hidden="true">*</span></label>
+          <input id="contact-email" name="email" type="email" data-testid="test-contact-email" required aria-describedby="test-contact-error-email" />
+          <span id="test-contact-error-email" data-testid="test-contact-error-email" class="error" role="alert" aria-hidden="true"></span>
+        </div>
+
+        <!-- Subject (full width) -->
+        <div class="field full">
+          <label for="contact-subject">Subject <span aria-hidden="true">*</span></label>
+          <input id="contact-subject" name="subject" type="text" data-testid="test-contact-subject" required aria-describedby="test-contact-error-subject" />
+          <span id="test-contact-error-subject" data-testid="test-contact-error-subject" class="error" role="alert" aria-hidden="true"></span>
+        </div>
+
+        <!-- Message (full width) -->
+        <div class="field full">
+          <label for="contact-message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="contact-message" name="message" data-testid="test-contact-message" required aria-describedby="test-contact-error-message"></textarea>
+          <span id="test-contact-error-message" data-testid="test-contact-error-message" class="error" role="alert" aria-hidden="true"></span>
+        </div>
+
+      </div>
+
+      <!-- Actions and status (structure only) -->
+      <div class="form-actions">
+        <button type="submit" data-testid="test-contact-submit">Send message</button>
+        <div id="form-status" aria-live="polite">
+          <span id="test-contact-success" data-testid="test-contact-success" class="success" role="status" aria-hidden="true">Thanks — your message was sent successfully.</span>
+        </div>
+      </div>
+
+    </form>
+
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
