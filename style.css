@@ -1207,10 +1207,6 @@ button[disabled] {
 
 /* TOUCH-ONLY DEVICES: remove hover transforms and increase hit areas */
 @media (hover: none) {
-  button[type="submit"]:hover {
-    transform: none;
-    box-shadow: 0 8px 22px rgba(11,79,214,0.06);
-  }
 
   /* enlarge interactive targets slightly */
   input[type="text"],
